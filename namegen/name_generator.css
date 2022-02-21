@@ -31,6 +31,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   
 }
 
@@ -160,18 +161,18 @@ body {
 	background-position: center;
 } */
 
-/* .two {
-	background: url('https://source.unsplash.com/820x900');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-.three {
-	background: url('https://source.unsplash.com/500x500');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-} */
+    /* .two {
+        background: url('https://source.unsplash.com/820x900');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .three {
+        background: url('https://source.unsplash.com/500x500');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    } */
 
 
 
@@ -235,8 +236,59 @@ body {
     margin: auto;
     padding-top: 100px;
 }
-input{
+.name_gen{
     border-radius: 10px;
-    background:rgba(255, 254, 254, 0.452);
+    background:rgba(255, 254, 254, 0.26);
+	height: 50px;
+	width: 90px;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
 
 }
+
+/* pregnancy_calculator starts  */
+span{
+	font-size: 50px;
+	
+}
+.para{
+	width: 70%;
+	;
+	font-weight: 1000;
+}
+ div .image{
+	height: 288px;
+	width: 684;
+
+
+}
+label{
+	padding: 20px;
+	font-size: 20px;
+	font-weight: 900;
+	text-decoration: underline;
+}
+select{
+		width: 30%;
+	padding: 20px;
+}
+.date{
+	padding-top: 20px;
+	font-size: 20px;
+
+}
+.date input{
+	font-size: 25px;
+	
+}
+.date label{
+	padding: 20px;	
+}
+button{
+	background-color:#0F8299;
+     border: transparent;
+	 margin: 20px;
+	 padding:15px 40px;
+}
+
