@@ -53,12 +53,12 @@
             #main_menu{width: 55%; position: relative;
             margin: auto;}
             .logo_area{width: 200px; height: 200px; position: absolute; left: 53%; top: 0; content: ""; margin-left:-150px; text-align: center; }
-            .logo_area img{height: 85,48px; width:220px; padding-top:40px ;}
-            @media only screen and (min-width: 200px) and (max-width: 767px) { 
+            .logo_area img{height: 85.48px; width:220px; padding-top:40px ;}
+            @media only screen and (min-width: 200px) and (max-width: 1460px) { 
                 .slicknav_menu{display: block;}
                 .inner_main_menu{display: none;}
-                .logo_area {height: auto;left: 0;margin-left: 0;position: relative;top: 0;width: 130px;}
-                .logo_area img{height: 200px;width: 100%;}
+                .logo_area {    position: fixed;top: 0; height: auto;}
+                .logo_area img{height: 86px;width: 220px;transform: translateY(-30px) translateX(22px);}
 
 
 
@@ -75,7 +75,7 @@
         <header>
         <div id="main_menu">
             <div class="logo_area">
-                <a href=""><img src="Snugkins_full_logo.png" alt=""></a>
+                 <a href=""><img class="image" src="Snugkins_full_logo.png" alt=""></a> 
             </div>
             <div class="inner_main_menu">
                 <ul id="menu">
@@ -170,7 +170,24 @@
         // });
         window.addEventListener("scroll", function(){
             var header = document.querySelector("header");
+            var image = document.querySelector("img");
             header.classList.toggle("sticky", window.scrollY > 0); 
+           
+$(function() {
+
+$(window).scroll(function() {
+  var x = $(window).scrollTop();
+
+  if (x >= 1) {
+    $("img").hide();
+  } else {
+    $("img").show();
+  }
+
+});
+
+});
+
         })
         
             </script>
