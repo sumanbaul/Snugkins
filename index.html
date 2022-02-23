@@ -1,81 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">        
-        <title>Mobile Menu</title>
-        <link rel="stylesheet" href="slicknav.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet"> 
-        <style>
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Barlow:wght@500&family=Great+Vibes&family=Lobster&family=Montserrat:wght@100&family=Ole&display=swap');
-           body{background: url(bg.jpg);font-family: 'Barlow', sans-serif;font-size: 15px;font-weight: 400; line-height: 1.5em;}
-            .inner_main_menu {margin:-10px auto; width: 8  70px;}    
-            .inner_main_menu ul{margin: 0; padding: 80px 0 0; list-style: none;text-align: right;}    
-            .inner_main_menu ul li{float: none; display: inline-block;position: relative}    
-            .inner_main_menu ul li:nth-child(1){float: left;}    
-            .inner_main_menu ul li:nth-child(2){float: left;}    
-            .inner_main_menu ul li:nth-child(3){float: left;}    
-            .inner_main_menu ul li a{color: #262626; font-size: 16px; text-transform: uppercase;text-decoration: none; display: block;padding: 10px 20px;}    
-            .inner_main_menu ul li a:hover{color: #6FDA44}  
-            .inner_main_menu ul li ul{position: absolute; top: 40px; left: -9999999px; width: 200px;background: #262626; padding: 0;}  
-            .inner_main_menu ul li:hover ul{left: 0px;}   
-            .inner_main_menu ul li ul li{float: left;width: 100%;text-align: left;}  
-            .inner_main_menu ul li ul li a{color: #fff;text-transform: capitalize; font-size: 15px;}  
-            .inner_main_menu ul li ul li a:hover{background: #ddd; color: #262626;}  
-            .inner_main_menu ul li ul li ul{top: 0; left: -999999px;}  
-            .inner_main_menu ul li:hover ul li ul{top: 0; left: -999999px;}  
-            .inner_main_menu ul li ul li:hover ul{top: 0; left: 200px;}  
-            .inner_main_menu ul li:hover a{color: #6FDA44}  
-            .inner_main_menu ul li:hover ul li a{color: #ffffff}  
-            .inner_main_menu ul li ul li a:hover{color: #262626}  
-            .inner_main_menu ul li ul li:hover a{background: #ddd; color: #262626;}  
-            .inner_main_menu ul li ul li:hover ul li a{background: #262626; color: #fff;}  
-            .inner_main_menu ul li ul li ul li a:hover{background: #ddd; color: #262626;}  
-            .slicknav_menu {
-              background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-              font-size: 16px;
-              padding: 0px;
-              display: none;    
-              position: fixed;
-              right: 0;
-              width: 100%;
-              z-index: 99999;
-            }
-            ul.slicknav_nav {
-              background: #262626 none repeat scroll 0 0;
-              left: 0;
-              position: absolute;
-              top: 0;
-              width: 80%;
-            }
-            .slicknav_btn {top: 35px;}
-            #main_menu{width: 55%; position: relative;
-            margin: auto;}
-            .logo_area{width: 200px; height: 200px; position: absolute; left: 53%; top: 0; content: ""; margin-left:-150px; text-align: center; }
-            .logo_area img{height: 85.48px; width:220px; padding-top:40px ;}
-            @media only screen and (min-width: 200px) and (max-width: 1460px) { 
-                .slicknav_menu{display: block;}
-                .inner_main_menu{display: none;}
-                .logo_area {    position: fixed;top: 0; height: auto;}
-                .logo_area img{height: 86px;width: 220px;transform: translateY(-30px) translateX(22px);}
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mobile Menu</title>
+    <link rel="stylesheet" href="slicknav.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet">
 
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
 
-
-
-
-
-
-
-            }
-        </style>
-    </head>
-    <body>
-        <header>
+<body>
+    <header>
         <div id="main_menu">
             <div class="logo_area">
-                 <a href=""><img class="image" src="Snugkins_full_logo.png" alt=""></a> 
+                <a href=""><img class="image" src="Snugkins_full_logo.png" alt=""></a>
             </div>
             <div class="inner_main_menu">
                 <ul id="menu">
@@ -120,76 +62,77 @@
         </div>
     </header>
 
-        <section 
-        class="course">
-    
-            <div class="row">
-             
-                <div class="coursecol">
-                    <h3>God</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia qui temporibus animi possimus architecto debitis exercitationem iste commodi doloremque necessitatibus!</p>
-                    
-                </div>
-                <div class="coursecol">
-                    <h3>God</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia qui temporibus animi possimus architecto debitis exercitationem iste commodi doloremque necessitatibus!</p>
-                    
-                </div>
+    <section class="course">
+
+        <div class="row">
+
+            <div class="coursecol">
+                <h3>God</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia qui temporibus animi possimus architecto debitis exercitationem iste commodi doloremque necessitatibus!</p>
+
             </div>
-            <div class="row">
-                
-                <div class="coursecol">
-                    <h3>God</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia qui temporibus animi possimus architecto debitis exercitationem iste commodi doloremque necessitatibus!</p>
-                    
-                </div>
-                <div class="coursecol">
-                    <h3>God</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia qui temporibus animi possimus architecto debitis exercitationem iste commodi doloremque necessitatibus!</p>
-                    
-                </div>
+            <div class="coursecol">
+                <h3>God</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia qui temporibus animi possimus architecto debitis exercitationem iste commodi doloremque necessitatibus!</p>
+
             </div>
-        </section>
-        
-        
+        </div>
+        <div class="row">
+
+            <div class="coursecol">
+                <h3>God</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia qui temporibus animi possimus architecto debitis exercitationem iste commodi doloremque necessitatibus!</p>
+
+            </div>
+            <div class="coursecol">
+                <h3>God</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia qui temporibus animi possimus architecto debitis exercitationem iste commodi doloremque necessitatibus!</p>
+
+            </div>
+        </div>
+    </section>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="jquery.slicknav.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
+        $(document).ready(function() {
             $('#menu').slicknav();
         });
-    </script>
-      <script>
+
         //        var cursor = document.getElementById('cursor');
         // document.addEventListener('mousemove',function(e){
         //     var x = e.clientX;
         //     var y = e.clientY;
         //     cursor.style.left = x + "px";
         //     cursor.style.top = y + "px"
-        
+
         // });
-        window.addEventListener("scroll", function(){
+        window.addEventListener("scroll", function() {
             var header = document.querySelector("header");
             var image = document.querySelector("img");
-            header.classList.toggle("sticky", window.scrollY > 0); 
-           
-$(function() {
+            header.classList.toggle("sticky", window.scrollY > 0);
 
-$(window).scroll(function() {
-  var x = $(window).scrollTop();
+            $(function() {
 
-  if (x >= 1) {
-    $("img").hide();
-  } else {
-    $("img").show();
-  }
+                $(window).scroll(function() {
+                    debugger;
+                    var x = $(window).scrollTop();
 
-});
+                    let screenWidth = window.innerWidth;
 
-});
+                    if (x >= 1 && screenWidth > 762) {
+                        $("img").hide();
+                    } else {
+                        $("img").show();
+                    }
+
+                });
+
+            });
 
         })
-        
-            </script>
-    </body>
+    </script>
+</body>
+
 </html>
