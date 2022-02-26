@@ -1,0 +1,150 @@
+.calculator_ovulation {
+    width: 100%;
+    max-width: 540px;
+    min-width: 330px;
+    height: auto;
+    border: 2px black;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 30px grey;
+    border-radius: 4px;
+}
+
+.container-header {
+    margin: 10px 0;
+    padding-bottom: 9px;
+    font-size: 36px;
+    font-weight: semibold;
+    text-align: center;
+}
+
+.container-calc {
+    border: 1px solid #f3648c;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.calc-label {
+    text-align: left;
+    font-size: 20px;
+}
+
+.container-calc #men_day,
+.container-calc #men_month,
+.container-calc #men_year .calc-param {
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    font-size: 16px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    min-width: 120px;
+    width: 100%;
+}
+
+.container-calc #men_day,
+.container-calc #men_month,
+.container-calc #men_year,
+.calc-param {
+    background-color: #f3f8fb;
+    border: 1px solid #68a9ca;
+    color: #5181ad;
+    font-size: 17px;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.container-calc .cal {
+    text-align: center;
+}
+
+.container-calc #edit-submit {
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: normal;
+    padding: 10px;
+    text-align: center;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    outline: none;
+    font-size: 18px;
+    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30%;
+    color: #fff !important;
+    border: 2px solid #6598ff !important;
+    background-color: #6598ff !important;
+    border-radius: 50px !important;
+    text-align: center;
+}
+
+.container-calc #edit-submit:hover {
+    color: #6598ff !important;
+    border: 2px solid #6598ff !important;
+    background-color: #fff !important;
+}
+
+.container-answer {
+    background-color: #f491ad;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px;
+    position: relative;
+    text-align: center;
+}
+
+.container-answer::after {
+    border-color: #f491ad transparent;
+    border-style: solid;
+    border-width: 0 30px 15px;
+    content: "";
+    display: block;
+    left: 50%;
+    margin-left: -30px;
+    position: absolute;
+    top: -15px;
+    width: 0;
+    z-index: 1;
+}
+
+.calculator_pregnancy .calc_image {
+    width: 100%;
+    height: auto;
+}
+
+.container-calc #edit-n {
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 15px;
+    padding: 15px 0;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-rows: repeat(1, 50px);
+}
+
+::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.container_image {
+    position: relative;
+    width: auto;
+    overflow: hidden;
+}
+
+.container_image img {
+    width: 100%;
+}
