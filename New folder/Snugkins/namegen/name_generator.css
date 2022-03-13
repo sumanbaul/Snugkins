@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:300&display=swap");
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1376484/jess-harding-lqT6NAmTaiY-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Rajdhani", sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.glass {
+  height: 1000px;
+  width: 100%;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1376484/jess-harding-lqT6NAmTaiY-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-clip-path: inset(10em);
+          clip-path: inset(10em);
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.drop-shadow {
+  height: 100%;
+  width: 100%;
+  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.3));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.drop-shadow:before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 10em;
+  height: calc(100% - 20em);
+  width: calc(100% - 20em);
+  border-top: 2px solid rgba(225, 225, 225, 0.2);
+  border-left: 1px solid rgba(225, 225, 225, 0.1);
+  border-right: 1px solid rgba(225, 225, 225, 0.3);
+ 
+}
+
+@media (max-width: 980px) {
+  .glass {
+    -webkit-clip-path: inset(5em);
+            clip-path: inset(5em);
+  }
+
+  .drop-shadow:before {
+    top: 5em;
+    width: calc(100% - 10em);
+  }
+ 
+}
+@media (max-width: 640px) {
+  .drop-shadow > span {
+    font-size: 2em;
+  }
+}
+
+/* cards
+ */
+ 
+.conatiner {
+	width: 100%;
+	height: 500px;
+    z-index: 100;
+}
+.wrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+
+.box {
+	margin: 10px;
+	width: 300px;
+	height: 490px;
+	text-align: center;
+	border-radius: 3px;
+	-webkit-transition: 200ms ease-in-out;
+	-o-transition: 200ms ease-in-out;
+	transition: 200ms ease-in-out;
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+.box:hover {
+	margin-bottom: -10px;
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.7);
+	        box-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+.box h1 {
+	color: #fff;
+	padding: 30px;
+	margin-top: 40px;
+	text-align: center;
+	font-weight: 100;
+	font-size: 25px;
+	background: rgba(99, 63, 63, 0.8);
+	-webkit-box-shadow: 0 0 30px rgba(0,0,0,0.7);
+	        box-shadow: 0 0 30px rgba(0,0,0,0.8);
+}
+
+.date h4 {
+	color: rgb(0, 0, 0);
+	font-weight: 300;
+	text-align: center;
+	letter-spacing: 3px;
+	text-shadow: 0 0 3px rgba(0,0,0,0.9);
+}
+.poster {
+	width: 90px;
+	height:90px;
+    margin: 20px;
+	display: flex;
+	position: relative;
+	border-radius: 100px;
+}
+.poster h4 {
+	top: -50px;
+    left: 100px;
+	color: rgb(0, 0, 0);
+	position: relative;
+	font-size: 50px;
+	text-align: center;
+	font-weight: 100;
+}
+/* .one {
+	background: url('https://source.unsplash.com/900x920');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+} */
+
+    /* .two {
+        background: url('https://source.unsplash.com/820x900');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .three {
+        background: url('https://source.unsplash.com/500x500');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    } */
+
+
+
+/* POSTER*/
+.p1 {
+	background: rgba(206, 205, 203, 0);
+    -webkit-box-shadow: 0 0 20px darkblue;
+	        box-shadow: 0 0 20px darkblue;
+}
+.p1:hover{
+    background: #2b5876;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+
+	background: -webkit-linear-gradient(left, #4e4376, #2b5876);
+	background: -o-linear-gradient(left, #4e4376, #2b5876);
+	background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+}
+
+.p2 {
+    background: rgba(245, 245, 245, 0);
+	-webkit-box-shadow: 0 0 20px #fa3380;
+	        box-shadow: 0 0 20px #fa3380;
+}
+.p2:hover{
+    background: #f857a6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ff5858, #f857a6);  /* Chrome 10-25, Safari 5.1-6 */
+	
+	background: -webkit-linear-gradient(left, #ff5858, #f857a6);
+	background: -o-linear-gradient(left, #ff5858, #f857a6);
+	background: linear-gradient(to right, #ff5858, #f857a6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+}
+
+
+
+
+/*  FOLLOW*/
+.Follow {	  background:url("https://pbs.twimg.com/profile_images/959092900708544512/v4Db9QRv_bigger.jpg")no-repeat center / contain;
+	width: 50px;
+	height: 50px;
+	bottom: 9px;
+	right: 20px;
+	display:block;
+	position:fixed;
+	border-radius:50%;
+	z-index:999;
+	animation:  rotation 10s infinite linear;
+	}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+/* textbboxx */
+.text_box{
+    margin: auto;
+    padding-top: 100px;
+}
+.name_gen{
+    border-radius: 10px;
+    background:rgba(255, 254, 254, 0.26);
+	height: 50px;
+	width: 90px;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+
+/* pregnancy_calculator starts  */
+span{
+	font-size: 50px;
+	
+}
+.para{
+	width: 70%;
+	;
+	font-weight: 1000;
+}
+ div .image{
+	height: 288px;
+	width: 684;
+
+
+}
+label{
+	padding: 20px;
+	font-size: 20px;
+	font-weight: 900;
+	text-decoration: underline;
+}
+select{
+		width: 30%;
+	padding: 20px;
+}
+.date{
+	padding-top: 20px;
+	font-size: 20px;
+
+}
+.date input{
+	font-size: 25px;
+	
+}
+.date label{
+	padding: 20px;	
+}
+button{
+	background-color:#0F8299;
+     border: transparent;
+	 margin: 20px;
+	 padding:15px 40px;
+}
+
