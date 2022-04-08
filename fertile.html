@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Snugkins/Css/FT.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Snugkins/Css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet">
+    <link rel="stylesheet" href="/Snugkins/Css/nav.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="/Snugkins/Css/styles.css" />
+    <style>
+        h2 {
+            color: #159d8f;
+        }
+        
+        p {
+            color: #5181ad;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="main_menu">
+            <div class="logo_area">
+                <a href=""><img class="image" src="/Snugkins/Images/Snugkins_full_logo.png" alt=""></a>
+            </div>
+            <div class="inner_main_menu">
+                <ul id="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Detail</a>
+                        <ul>
+                            <li><a href="">Dropdown Menu</a></li>
+                            <li><a href="">Dropdown Menu</a>
+
+                            </li>
+                            <li><a href="">Dropdown Menu</a></li>
+                            <li><a href="">Dropdown Menu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Map</a>
+                        <ul>
+                            <li><a href="">Dropdown Menu</a></li>
+                            <li><a href="">Dropdown Menu</a>
+
+                            </li>
+                            <li><a href="">Dropdown Menu</a></li>
+                            <li><a href="">Dropdown Menu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Newsletter</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <nav role="navigation">
+        <div class="logo_area">
+            <a href=""><img class="image" src="/Snugkins/Images/Snugkins_full_logo.png" alt=""></a>
+        </div>
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Info</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+    </div>
+    </div>
+    <div class="calculator_ovulation">
+        <div class="coursecol" style="background-image: url( https://post.healthline.com/wp-content/uploads/2020/05/ovulation_strip-732x549-thumbnail.jpgz);">
+        </div>
+
+        <div class="container-header">Ovulation calculator</div>
+        <div class="container-calc">
+            <label class="calc-label" style="color:#5181ad;" for="edit-n">Enter the first day of the last menstrual period, the duration of the shortest and longest menstrual cycles (number of days):</label>
+
+            <div id="edit-n" class="calc-params">
+
+                <input type="date" class="calc-param cal" id="men_date">
+                <input class="calc-param" id="men_min" placeholder="short cycle">
+                <input class="calc-param" id="men_max" placeholder="long cycle">
+
+            </div>
+
+            <button onclick="hesab();" id="edit-submit" class="form-submit">Calculate</button>
+        </div>
+        <div>
+            <h2>How we calculate your fertile days</h2>
+            <p> The Ovulation Calculator estimates when you'll ovulate by counting back 14 days from the day you expect your next period. (If your cycle is 28 days long, your next period should start 28 days from the first day of your last period.) Your fertile
+                window includes the day you ovulate and the five days before, but keep in mind that you're much more likely to get pregnant during the last three days of this time frame. See other ways to pinpoint your fertile days and get pregnant fast.
+                Find out how to use an ovulation predictor kit, chart your basal body temperature, and pay attention to changes in cervical mucus.</p>
+            <h2>Signs you may be ovulating</h2>
+            <p>
+                * Rise in basal body temperature <br>* Cervical mucus is the texture of egg whites <br>* Breast tenderness <br>* Mild cramps or twinges in the abdomen <br>* Very mild spotting <br>* Heightened sense of smell <br>* Increased sex drive <br>*
+                Changes in appetite or mood <br>* BloatingSigns
+
+            </p>
+            <h2>Tips for getting pregnant </h2>
+            <p>
+                * Find out when you’ll ovulate using our calculator, an ovulation predictor kit, or by tracking your symptoms.<br> * Have sex during the two or three days before you ovulate.<br> * See your doctor, kick unhealthy habits, and start taking
+                folic acid before you start trying.<br> * Sex position and female orgasm don’t affect your chances of getting pregnant.
+            </p>
+        </div>
+        <div class="container-answer">
+            <div id="netice_1"> </div>
+            <div id="netice_2"> </div>
+        </div>
+    </div>
+
+    <script>
+        function hesab() {
+            men_day = document.getElementById("men_date").value;
+            men_min = document.getElementById("men_min").value;
+            men_max = document.getElementById("men_max").value;
+
+            var m1 = men_min - 18;
+            var m2 = men_max - 11;
+
+            men_date = new Date(men_day);
+
+
+            var ovul_1 = new Date(men_date);
+            var ovul_2 = new Date(men_date);
+
+
+            ovul_1.setDate(ovul_1.getDate() + m1);
+            ovul_2.setDate(ovul_2.getDate() + m2);
+
+            var monthes = [
+                'JANUARY',
+                'FEBRUARY',
+                'MARCH',
+                'APRIL',
+                'May',
+                'JUNE',
+                'JULY',
+                'AUGUST',
+                'SEPTEMBER',
+                'OCTOBER',
+                'NOVEMBER',
+                'DECEMBER'
+            ];
+
+
+            document.getElementById("netice_1").innerHTML = "Ovulation cycle menstruation <b><u>" + m1 + " - " + m2 + "</b></u>falls on the days of";
+            document.getElementById("netice_2").innerHTML = "this, <b><u>" + ovul_1.getDate() + " " + monthes[ovul_1.getMonth()] + " – " + ovul_2.getDate() + " " + monthes[ovul_2.getMonth()] + "</b></u> dates back to";
+        }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="/Snugkins/Js/index.js"></script>
+
+
+
+</body>
+
+</html>
