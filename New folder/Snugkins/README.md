@@ -1,2 +1,0 @@
-# Snugkins
-Snugkins Calculators
