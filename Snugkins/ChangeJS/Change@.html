@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const mystr = "Hey, I am 25 and he is 31! ";
+
+        console.log(mystr.replace(/(\d+)/g, function(match, g1, g2, g3) {
+            return parseInt(g1) + parseInt(g2);
+        }));
+    </script>
+</body>
+
+</html>
